@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy - Window Switcher Pro</title>
+  <meta name="description" content="Privacy posture and permission explanations for Window Switcher Pro.">
+  <meta property="og:title" content="Window Switcher Pro Privacy">
+  <meta property="og:description" content="Permission and data-use summary for the macOS app and window switcher.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0fb7c7">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/"><img src="/assets/app-icon.png" alt="">Window Switcher Pro</a>
+      <div class="links">
+        <a href="/features.html">Features</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/changelog.html">Changelog</a>
+        <a href="/privacy.html" aria-current="page">Privacy</a>
+      </div>
+      <a class="status-link" href="/pricing.html">Pre-release</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="mini-hero">
+      <div class="wrap content">
+        <span class="badge">Privacy</span>
+        <h1>Local-first by design.</h1>
+        <p class="lead">Window Switcher Pro needs macOS permissions to switch windows and show previews. It does not need an account system to do that work.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="grid">
+          <article class="card accent-cyan">
+            <h3>Accessibility</h3>
+            <p>Required so the app can focus the selected app or window after you use the switcher shortcut.</p>
+          </article>
+          <article class="card accent-blue">
+            <h3>Screen Recording</h3>
+            <p>Optional. Used for local window thumbnails. Switching continues to work when this permission is off.</p>
+          </article>
+          <article class="card accent-magenta">
+            <h3>Background Activity</h3>
+            <p>Optional. Used when you choose to open the menu bar utility automatically at login.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="wrap content">
+        <h2>Current data-use summary</h2>
+        <ul>
+          <li>No account system is required for the current product.</li>
+          <li>Switcher settings are stored locally using app preferences and app-container files.</li>
+          <li>Diagnostics are written to a local app-container log for troubleshooting.</li>
+          <li>Window information is processed locally for switching and preview display.</li>
+          <li>No analytics, advertising, or tracking SDK claims should be made unless they are verified against the final shipping binary.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap content">
+        <h2>App Store note</h2>
+        <p>This page reflects the current shipping posture: local-only settings, optional Screen Recording for thumbnails, optional login-item startup, and no account or tracking system. Keep it aligned with the binary, privacy manifest, and App Store Connect privacy labels during submission.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>&copy; 2026 Ian Trimble. Window Switcher Pro.</div>
+      <div><a href="/privacy.html">Privacy</a> - <a href="/sitemap.xml">Sitemap</a></div>
+    </div>
+  </footer>
+</body>
+</html>

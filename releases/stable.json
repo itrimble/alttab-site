@@ -1,0 +1,9 @@
+{
+  "version": "1.1.0",
+  "build": "5",
+  "minimum_system_version": "14.0",
+  "published_at": "2026-08-17T00:00:00Z",
+  "release_page_url": "https://alttab.remnantsecurity.com/changelog.html",
+  "release_kind": "release-candidate",
+  "release_notes": "Ranked and locally learned search, exact-window switching, independent workflow profiles, fail-closed manual update checks, and direct-release reliability improvements."
+}

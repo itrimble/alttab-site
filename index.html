@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Window Switcher Pro - fast native window switching for macOS</title>
+  <meta name="description" content="Window Switcher Pro is a native macOS menu bar utility for switching apps and windows with a configurable keyboard shortcut, clean onboarding, thumbnails, exceptions, and privacy-first local settings.">
+  <meta property="og:title" content="Window Switcher Pro">
+  <meta property="og:description" content="A native macOS app and window switcher built with public APIs and a privacy-first local design.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0fb7c7">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preload" as="image" href="/assets/app-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/"><img src="/assets/app-icon.png" alt="">Window Switcher Pro</a>
+      <div class="links">
+        <a href="/features.html">Features</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/changelog.html">Changelog</a>
+        <a href="/privacy.html">Privacy</a>
+      </div>
+      <a class="status-link" href="/pricing.html">Pre-release</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Native macOS window switching</span>
+          <h1>Switch apps without breaking your flow.</h1>
+          <p class="lead">Window Switcher Pro gives macOS a focused keyboard-driven switcher for open apps and windows, with optional thumbnails, clear permissions, and settings that stay out of the way.</p>
+          <div class="actions">
+            <a class="button primary" href="/features.html">Explore features</a>
+            <a class="button secondary" href="/privacy.html">Privacy details</a>
+          </div>
+          <p class="release-note">Pre-release for macOS 14+ using SwiftUI, AppKit, Accessibility, and ScreenCaptureKit.</p>
+        </div>
+
+        <div class="hero-visual" aria-label="Window Switcher Pro switcher preview">
+          <div class="switcher-shell">
+            <div class="switcher-header">
+              <img src="/assets/app-icon.png" alt="">
+              <div>
+                <strong>Window Switcher Pro</strong>
+                <span>Option+Tab</span>
+              </div>
+            </div>
+            <div class="switcher-row selected">
+              <div class="window-thumb teal"></div>
+              <div><strong>Safari</strong><span>Product research</span></div>
+            </div>
+            <div class="switcher-row">
+              <div class="window-thumb blue"></div>
+              <div><strong>Finder</strong><span>Project files</span></div>
+            </div>
+            <div class="switcher-row">
+              <div class="window-thumb pink"></div>
+              <div><strong>Terminal</strong><span>Build output</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-title">
+          <span class="badge">Built for daily use</span>
+          <h2>A switcher that feels like part of the Mac.</h2>
+          <p class="lead">The app is designed as a menu bar utility: lightweight, keyboard-first, and easy to understand when macOS asks for permissions.</p>
+        </div>
+        <div class="stat-row">
+          <div class="tile accent-cyan"><strong>Option+Tab</strong><span class="muted">Default shortcut, with configurable alternatives.</span></div>
+          <div class="tile accent-blue"><strong>Windows</strong><span class="muted">Switch between apps, windows, or title-focused entries.</span></div>
+          <div class="tile accent-magenta"><strong>Private</strong><span class="muted">Settings and diagnostics stay local to your Mac.</span></div>
+          <div class="tile accent-orange"><strong>Native</strong><span class="muted">Built with public macOS APIs and App Sandbox in mind.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="wrap product-strip">
+        <div>
+          <span class="badge">Switcher modes</span>
+          <h2>Choose the level of visual detail you want.</h2>
+          <p class="lead">Use compact app icons when you want speed, titles when you need clarity, or ScreenCaptureKit thumbnails with grouped per-window selection when visual context matters.</p>
+        </div>
+        <div class="mode-grid">
+          <article class="mode-card"><span class="mode-icon">01</span><strong>Thumbnails</strong><p>Window previews when Screen Recording is enabled, with nested targets for apps that have multiple windows.</p></article>
+          <article class="mode-card"><span class="mode-icon">02</span><strong>App icons</strong><p>Compact switching for muscle memory and speed.</p></article>
+          <article class="mode-card"><span class="mode-icon">03</span><strong>Titles</strong><p>Readable labels for document-heavy workflows.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="wrap">
+        <div class="section-title">
+          <span class="badge dark-badge">Permissions</span>
+          <h2>No mystery permission wall.</h2>
+          <p class="lead">The app explains what each macOS permission does before you enable it.</p>
+        </div>
+        <div class="grid">
+          <article class="card dark-card accent-cyan">
+            <h3>Accessibility</h3>
+            <p>Required to focus the app or window you select.</p>
+          </article>
+          <article class="card dark-card accent-blue">
+            <h3>Screen Recording</h3>
+            <p>Optional. Used only for richer local window thumbnails.</p>
+          </article>
+          <article class="card dark-card accent-magenta">
+            <h3>Launch at Login</h3>
+            <p>Optional. Keeps the menu bar utility ready after sign-in.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <span class="badge">Clean-room boundary</span>
+          <h2>Independent code, assets, and product language.</h2>
+          <p class="lead">Window Switcher Pro is being built as its own macOS utility. The project avoids copied source, private APIs, inherited branding, and unsupported update assumptions.</p>
+        </div>
+        <div class="check-list">
+          <div><strong>Public APIs</strong><span>Accessibility, AppKit, Carbon hotkeys, ServiceManagement, and ScreenCaptureKit.</span></div>
+          <div><strong>Sandbox-first</strong><span>Designed for an App Store-oriented review path.</span></div>
+          <div><strong>Local-first privacy</strong><span>No account system, analytics claim, or tracking claim in the current product posture.</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>&copy; 2026 Ian Trimble. Window Switcher Pro.</div>
+      <div><a href="/privacy.html">Privacy</a> - <a href="/sitemap.xml">Sitemap</a></div>
+    </div>
+  </footer>
+</body>
+</html>
